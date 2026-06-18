@@ -4,7 +4,7 @@ global:
 
 image:
   registry: docker.io
-  repository: vucongtuanduong/web_grading_system/submission-service
+  repository: vucongtuanduong/web-grading-system-submission-service
   tag: "v1.0.0"
   pullPolicy: Always
 
