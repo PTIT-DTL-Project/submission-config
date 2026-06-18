@@ -1,0 +1,6 @@
+apiVersion: v2
+name: submission-service
+description: Helm chart for submission-service
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
