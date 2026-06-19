@@ -45,6 +45,14 @@ spec:
                 secretKeyRef:
                   name: db-secret
                   key: DB_PASSWORD
+            - name: RUSTFS_ENDPOINT
+              value: {{ .Values.rustfs.endpoint }}
+            - name: RUSTFS_ACCESS_KEY
+              value: {{ .Values.rustfs.accessKey }}
+            - name: RUSTFS_SECRET_KEY
+              value: {{ .Values.rustfs.secretKey }}
+            - name: RUSTFS_BUCKET_NAME
+              value: {{ .Values.rustfs.bucketName }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           readinessProbe:

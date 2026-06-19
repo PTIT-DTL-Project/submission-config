@@ -12,6 +12,12 @@ spring:
   profilesActive: stg
   dbName: submission_db
 
+rustfs:
+  endpoint: http://rustfs:9000
+  accessKey: minioadmin
+  secretKey: minioadmin
+  bucketName: submission-files
+
 service:
   type: ClusterIP
   port: 8082
